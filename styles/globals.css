@@ -1,8 +1,10 @@
 :root {
-  --color-header: #FFFFFF;
-  --color-background: #F5F6F9;
+  --color-background: #FFF;
   --color-primary: #222222;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 62.5%;
 }
 
@@ -12,7 +14,7 @@
   box-sizing: border-box;
 }
 
-html, body {
+html, body, :root {
   height: 100vh;
 }
 
@@ -26,5 +28,6 @@ body, input, button, textarea {
 }
 
 .container {
-  min-width: 1000px;
+  width: 80vw;
+  min-width: 700px;
 }
