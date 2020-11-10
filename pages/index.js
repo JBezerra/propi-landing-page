@@ -60,7 +60,13 @@ export default function Landing() {
               <p>Assine documentos online, com validade jurídica, sem precisar ir até o cartório</p>
             </div>
           </div>
+        </div>
+      </div>
 
+      <div className={styles.testDriveContainer}>
+        <h1>Faça um teste Grátis!</h1>
+        <div className={styles.testDriveButtonContainer}>
+          <h4>Quero Testar</h4>
         </div>
       </div>
 

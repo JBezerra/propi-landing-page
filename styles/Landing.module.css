@@ -1,6 +1,6 @@
 #landingContainer {
-    padding-top: 32px;
     height: 100vh;
+    padding-top: 32px;
 }
 
 .topContainer img {
@@ -13,7 +13,6 @@
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "title hero";
-    padding-top: 0px;
 }
 
 .welcomeTextContainer {
@@ -21,7 +20,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* background-color: red; */
 }
 
 .welcomeTitleContainer h1 {
@@ -66,20 +64,20 @@
 }
 
 .featureContainer h1 {
-    padding-top: 48px;
     width: 654px;
     font: 800 46px Open Sans;
     line-height: 46px;
     color: rgba(0, 0, 0, 0.87);
+    padding-top: 48px;
 }
 
 .featureContainer p {
-    padding-top: 10px;
     width: 528px;
     height: 30px;
     font: normal 20px Open Sans;
     line-height: 27px;
     color: rgba(0, 0, 0, 0.67);
+    padding-top: 10px;
 }
 
 .featureItemsContainer {
@@ -95,7 +93,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-
     width: 264px;
     height: 170px;
     background: #FFFFFF;
@@ -119,4 +116,43 @@
     font: normal 16px Open Sans;
     line-height: 22px;
     color: rgba(0, 0, 0, 0.67);
+}
+
+.testDriveContainer {
+    width: 1144px;
+    height: 128px;
+    background: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+    margin-top: 64px;
+}
+
+.testDriveContainer h1 {
+    font: 800 46px Open Sans;
+    color: rgba(255, 255, 255, 0.87);
+    padding-top: 0px;
+}
+
+.testDriveButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 208px;
+    height: 48px;
+    background: #FFFFFF;
+    border-radius: 40px;
+    transition: opacity 0.3s;
+}
+
+.testDriveButtonContainer:hover {
+    opacity: 0.6;
+}
+
+.testDriveButtonContainer h4 {
+    font: bold 16px Open Sans;
+    color: rgba(0, 0, 0, 0.87);
 }
