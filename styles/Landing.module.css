@@ -156,3 +156,40 @@
     font: bold 16px Open Sans;
     color: rgba(0, 0, 0, 0.87);
 }
+
+.marketValueContainer{
+    margin-top: 64px;
+}
+.marketValueContainer h1 {
+    width: 450px;
+    height: 56px;
+    font: 800 46px Open Sans;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.marketValueItemsContainer {
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.marketValueItemTitleContainer {
+    display: flex;
+    align-items: center;
+}
+
+.marketValueItemTitleContainer h3 {
+    font: bold 22px Open Sans;
+    line-height: 33px;
+    color: rgba(0, 0, 0, 0.87);
+    padding-left: 8px;
+}
+
+.marketValueItemContainer p {
+    width: 322px;
+    font: 400 18px Open Sans;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.67);
+    padding-top: 12px;
+}

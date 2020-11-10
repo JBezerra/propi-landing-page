@@ -70,6 +70,62 @@ export default function Landing() {
         </div>
       </div>
 
+      <div className={styles.marketValueContainer}>
+        <h1>Porque a Propi?</h1>
+
+        <div className={styles.marketValueItemsContainer}>
+          <div className={styles.marketValueItemContainer}>
+            <div className={styles.marketValueItemTitleContainer}>
+              <img src='/assets/images/budget.svg' alt='Dinheiro' />
+              <h3>Economize</h3>
+            </div>
+            <p>Através de bots, a Propi automatiza a coleta todas as certidões públicas e documentos cartórios, economizando muito tempo e dinheiro para imobiliária ou corretor.</p>
+          </div>
+
+          <div className={styles.marketValueItemContainer}>
+            <div className={styles.marketValueItemTitleContainer}>
+              <img src='/assets/images/aim.svg' alt='Mira' />
+              <h3>Centralize</h3>
+            </div>
+            <p>Você não precisa contratar vários serviços para resolver o mesmo problema. Emita Certidões, pague boletos, colete documentação e assine contratos, tudo centralizado em um só lugar.</p>
+          </div>
+
+          <div className={styles.marketValueItemContainer}>
+            <div className={styles.marketValueItemTitleContainer}>
+              <img src='/assets/images/running.svg' alt='Homem correndo' />
+              <h3>Agilize</h3>
+            </div>
+            <p>A plataforma da Propi acelera o fechamento da transação imobiliária, sendo muito mais barato e rápido que um despachante. Chega de desconfiança, lentidão ou cancelamento de negócios.</p>
+          </div>
+        </div>
+        <div className={styles.marketValueItemsContainer}>
+          <div className={styles.marketValueItemContainer}>
+            <div className={styles.marketValueItemTitleContainer}>
+              <img src='/assets/images/target.svg' alt='Alvo' />
+              <h3>Foque no negócio</h3>
+            </div>
+            <p>Cuidamos da burocracia para que o corretor foque em fechar negócio, fazendo o trabalho repetitivo, demorado e pontual que toma boa parte do seu tempo.</p>
+          </div>
+
+          <div className={styles.marketValueItemContainer}>
+            <div className={styles.marketValueItemTitleContainer}>
+              <img src='/assets/images/shield.svg' alt='Escudo' />
+              <h3>Seguro</h3>
+            </div>
+            <p>A pré-análise da Propi alerta pendências e acusa qualquer documento que possa travar a transação, dando mais segurança jurídica ao processo.</p>
+          </div>
+
+          <div className={styles.marketValueItemContainer}>
+            <div className={styles.marketValueItemTitleContainer}>
+              <img src='/assets/images/parking.svg' alt='Carro estacionado' />
+              <h3>Sem Deslocamento</h3>
+            </div>
+            <p>Com a plataforma da Propi você não precisa mais ir até cartórios. Você faz solicitações, consultas e assinaturas online, com validade jurídica, sem sair de casa. </p>
+          </div>
+        </div>
+      </div>
+
+
     </div>
 
   )
