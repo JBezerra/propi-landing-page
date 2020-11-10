@@ -1,3 +1,30 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes transformLeft {
+    from {
+        transform: translateX(-20px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes transformRight {
+    from {
+        transform: translateX(20px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
 #landingContainer {
     height: 100vh;
     padding-top: 32px;
@@ -13,6 +40,7 @@
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "title hero";
+    animation: fadeIn 2s;
 }
 
 .welcomeTextContainer {
@@ -20,6 +48,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    animation: transformLeft 1s;
 }
 
 .welcomeTitleContainer h1 {
@@ -49,14 +78,17 @@
     outline: none;
     cursor: pointer;
     transition: opacity 0.3s;
+    transition: transform 0.3s;
 }
 
 .welcomeContainer button:hover {
-    opacity: 0.6;
+    opacity: 0.8;
+    transform: translateY(-10px);
 }
 
 .welcomeHeroContainer {
     grid-area: hero;
+    animation: transformRight 1s;
 }
 
 .welcomeHeroContainer img {
@@ -85,7 +117,7 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    padding-top: 22px;
+    padding-top: 32px;
 }
 
 .featureItemContainer {
@@ -98,6 +130,11 @@
     background: #FFFFFF;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.featureItemContainer:hover {
+    transform: translateY(-10px);
 }
 
 .featureItemTextContainer {
@@ -281,6 +318,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: transform 0.3s;
+}
+
+.plansItemContainer:hover {
+    transform: translateY(-10px);
 }
 
 .plansContentAreaContainer {
