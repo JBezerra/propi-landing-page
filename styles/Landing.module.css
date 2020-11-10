@@ -8,7 +8,7 @@
     height: 72px;
 }
 
-.mainContent {
+.welcomeContainer {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
@@ -16,7 +16,7 @@
     padding-top: 0px;
 }
 
-.mainTextContainer {
+.welcomeTextContainer {
     grid-area: title;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
     /* background-color: red; */
 }
 
-.titleContainer h1 {
+.welcomeTitleContainer h1 {
     width: 416px;
     height: 200px;
     font: 800 64px Open Sans;
@@ -32,7 +32,7 @@
     color: rgba(0, 0, 0, 0.87);
 }
 
-.titleContainer p {
+.welcomeTitleContainer p {
     width: 396px;
     height: 80px;
     font: 20px Open Sans;
@@ -40,7 +40,7 @@
     color: rgba(0, 0, 0, 0.67);
 }
 
-.mainTextContainer button {
+.welcomeTextContainer button {
     width: 350px;
     height: 75px;
     background-color: rgba(0, 0, 0, 0.87);
@@ -53,14 +53,14 @@
     transition: opacity 0.3s;
 }
 
-.mainContent button:hover {
+.welcomeContainer button:hover {
     opacity: 0.6;
 }
 
-.heroContainer {
+.welcomeHeroContainer {
     grid-area: hero;
 }
 
-.heroContainer img {
+.welcomeHeroContainer img {
     height: 550px;
 }

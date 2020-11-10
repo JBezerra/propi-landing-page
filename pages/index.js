@@ -12,17 +12,17 @@ export default function Landing() {
         <img src='/assets/images/logo.svg' alt='Propi' />
       </div>
 
-      <div className={styles.mainContent}>
+      <div className={styles.welcomeContainer}>
 
-        <div className={styles.mainTextContainer}>
-          <div className={styles.titleContainer}>
+        <div className={styles.welcomeTextContainer}>
+          <div className={styles.welcomeTitleContainer}>
             <h1>Burocracia de imóveis Simplificada</h1>
             <p>Resolva toda a burocracia documental de imóveis online, em poucos minutos e sem sair de casa.</p>
           </div>
           <button>Começar</button>
         </div>
 
-        <div className={styles.heroContainer}>
+        <div className={styles.welcomeHeroContainer}>
           <img src='/assets/images/hero.svg' alt='Propi' />
         </div>
 
