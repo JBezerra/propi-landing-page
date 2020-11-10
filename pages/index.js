@@ -125,6 +125,38 @@ export default function Landing() {
         </div>
       </div>
 
+      <div className={styles.howItWorksContainer}>
+        <h1>Como funciona</h1>
+        <div className={styles.howItWorksItemsContainer}>
+          <div className={styles.howItWorksItemContainer}>
+            <img src='/assets/images/circle-pen.svg' alt='Caneta' />
+            <h5>1</h5>
+            <h4>Cadastro</h4>
+            <p>Faça o cadastro na plataforma da Propi</p>
+          </div>
+          <img src='/assets/images/arrow-right.svg' alt='Seta para direita'/>
+          <div className={styles.howItWorksItemContainer}>
+            <img src='/assets/images/circle-card.svg' alt='Caneta' />
+            <h5>2</h5>
+            <h4>Crédito</h4>
+            <p>Selecione o pacote de créditos ideal para você</p>
+          </div>
+          <img src='/assets/images/arrow-right.svg' alt='Seta para direita'/>
+          <div className={styles.howItWorksItemContainer}>
+            <img src='/assets/images/circle-tag.svg' alt='Caneta' />
+            <h5>3</h5>
+            <h4>Escolha</h4>
+            <p>Escolha o serviço que deseja solicitar</p>
+          </div>
+          <img src='/assets/images/arrow-right.svg' alt='Seta para direita'/>
+          <div className={styles.howItWorksItemContainer}>
+            <img src='/assets/images/circle-file.svg' alt='Caneta' />
+            <h5>4</h5>
+            <h4>Acompanhe</h4>
+            <p>Acompanhe todo o processo documental online</p>
+          </div>
+        </div>
+      </div>
 
     </div>
 

@@ -157,9 +157,10 @@
     color: rgba(0, 0, 0, 0.87);
 }
 
-.marketValueContainer{
+.marketValueContainer {
     margin-top: 64px;
 }
+
 .marketValueContainer h1 {
     width: 450px;
     height: 56px;
@@ -192,4 +193,62 @@
     line-height: 27px;
     color: rgba(0, 0, 0, 0.67);
     padding-top: 12px;
+}
+
+.howItWorksContainer {
+    position: absolute;
+    left: 0px;
+    width: 100vw;
+    height: 414px;
+    background: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.12);
+    margin-top: 64px;
+}
+
+.howItWorksContainer h1{
+    font: 800 46px Open Sans;
+    color: #FFFFFF;
+    width: 80%;
+    margin: auto;
+    padding-top: 48px;
+    padding-bottom: 31px;
+}
+
+.howItWorksItemsContainer {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.howItWorksItemContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 222px;
+}
+
+.howItWorksItemContainer img {
+    width: 98px;
+    height: 98px;
+}
+
+.howItWorksItemContainer h5 {
+    font: 800 16px Open Sans;
+    display: flex;
+    color: #BDBDBD;
+}
+
+.howItWorksItemContainer h4 {
+    font: bold 24px Open Sans;
+    color: #FFFFFF;
+}
+
+.howItWorksItemContainer p {
+    width: 230px;
+    font: normal 16px Open Sans;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
 }
