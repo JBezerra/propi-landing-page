@@ -9,7 +9,7 @@ export default function Landing() {
       </Head>
 
       <div className={styles.topContainer}>
-        <img src='/assets/images/logo.svg' alt='Propi' />
+        <img src='/assets/images/logo-black.svg' alt='Propi' />
       </div>
 
       <div className={styles.welcomeContainer}>
@@ -198,6 +198,42 @@ export default function Landing() {
         </div>
       </div>
 
+      <div className={styles.footerContainer}>
+        <div className={styles.footerContentAreaContainer}>
+          <div className={styles.footerEmailSenderContainer}>
+            <form>
+              <img src='/assets/images/envelope.svg' alt='Envelope'/>
+              <input
+                type='text'
+                placeholder='Ficou com alguma dúvida?'
+              >
+              </input>
+            </form>
+            <button>Entrar em Contato</button>
+          </div>
+
+          <div className={styles.footerInformationsContainer}>
+            <div className={styles.footerDescriptionContainer}>
+              <img src='/assets/images/logo-white.svg' alt='Propi' />
+              <p>A Propi é uma plataforma que simplifica a burocracia documental de imóveis para imobiliárias. Automatizamos o trabalho repetitivo para o corretor economizar tempo, dinheiro e focar em fecha negócio.</p>
+            </div>
+            <div className={styles.footerContactContainer}>
+              <h2>Contato</h2>
+              <div className={styles.footerContactInformationContainer}>
+                <img src='/assets/images/phone.svg' alt='Telefone'/>
+                <h4>+55 11 981790503</h4>
+              </div>
+
+              <div className={styles.footerContactInformationContainer}>
+                <img src='/assets/images/envelope.svg' alt='Envelope'/>
+                <h4>contato@propi.com.br</h4>
+              </div>
+            </div>
+          </div>
+          <p>© 2020 Propi</p>
+        </div>
+
+      </div>
     </div>
 
   )
