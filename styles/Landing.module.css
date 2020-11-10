@@ -64,3 +64,59 @@
 .welcomeHeroContainer img {
     height: 550px;
 }
+
+.featureContainer h1 {
+    padding-top: 48px;
+    width: 654px;
+    font: 800 46px Open Sans;
+    line-height: 46px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.featureContainer p {
+    padding-top: 10px;
+    width: 528px;
+    height: 30px;
+    font: normal 20px Open Sans;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.67);
+}
+
+.featureItemsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 22px;
+}
+
+.featureItemContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    width: 264px;
+    height: 170px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+}
+
+.featureItemTextContainer {
+    width: 224px;
+    height: 122px;
+}
+
+.featureItemContainer h1 {
+    font: bold 18px Open Sans;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.featureItemContainer p {
+    width: 216px;
+    font: normal 16px Open Sans;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.67);
+}

@@ -27,6 +27,43 @@ export default function Landing() {
         </div>
 
       </div>
+
+      <div className={styles.featureContainer}>
+        <h1>Focamos na burocracia, o corretor em fechar negócio</h1>
+        <p>Entenda todos os nossos serviços.</p>
+
+        <div className={styles.featureItemsContainer}>
+          <div className={styles.featureItemContainer}>
+            <div className={styles.featureItemTextContainer}>
+              <h3>Emissão automática de certidões</h3>
+              <p>Solicite todas as certidões públicas e documentos de cartório com um clique</p>
+            </div>
+          </div>
+
+          <div className={styles.featureItemContainer}>
+            <div className={styles.featureItemTextContainer}>
+              <h3>Coleta centralizada de documentos</h3>
+              <p>Colete os documentos do cliente enviando um link para upload de arquivos</p>
+            </div>
+          </div>
+
+          <div className={styles.featureItemContainer}>
+            <div className={styles.featureItemTextContainer}>
+              <h3>Pré-análise de pendências</h3>
+              <p>Saiba quais documentos e certidões tem pendências e destrave seus negócios</p>
+            </div>
+          </div>
+
+          <div className={styles.featureItemContainer}>
+            <div className={styles.featureItemTextContainer}>
+              <h3>Assinatura online de contratos</h3>
+              <p>Assine documentos online, com validade jurídica, sem precisar ir até o cartório</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
 
   )
