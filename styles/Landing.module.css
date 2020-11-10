@@ -145,6 +145,7 @@
     height: 48px;
     background: #FFFFFF;
     border-radius: 40px;
+    cursor: pointer;
     transition: opacity 0.3s;
 }
 
