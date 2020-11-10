@@ -205,7 +205,7 @@
     margin-top: 64px;
 }
 
-.howItWorksContainer h1{
+.howItWorksContainer h1 {
     font: 800 46px Open Sans;
     color: #FFFFFF;
     width: 80%;
@@ -250,5 +250,82 @@
     display: flex;
     align-items: center;
     text-align: center;
+    color: #FFFFFF;
+}
+
+.plansContainer {
+    margin-top: calc(466px + 70px);
+    margin-bottom: 72px;
+}
+
+.plansContainer h1 {
+    font: 800 46px Open Sans;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.plansItemsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+.plansItemContainer {
+    width: 352px;
+    height: 352px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.plansContentAreaContainer {
+    height: 272px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.plansContentAreaContainer p {
+    font: 600 20px Open Sans;
+    color: #EB5757;
+}
+
+.plansItemTextContainer {
+    height: 168px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.plansItemTextContainer h2 {
+    font: bold 36px Open Sans;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.plansItemTextContainer p {
+    font: 600 24px Open Sans;
+    color: rgba(0, 0, 0, 0.67);
+}
+
+.plansItemTextContainer h1 {
+    font: bold 48px Open Sans;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.plansItemContainer button {
+    width: 272px;
+    height: 48px;
+    background: #000000;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font: bold 16px Open Sans;
     color: #FFFFFF;
 }

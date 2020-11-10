@@ -134,26 +134,66 @@ export default function Landing() {
             <h4>Cadastro</h4>
             <p>Faça o cadastro na plataforma da Propi</p>
           </div>
-          <img src='/assets/images/arrow-right.svg' alt='Seta para direita'/>
+          <img src='/assets/images/arrow-right.svg' alt='Seta para direita' />
           <div className={styles.howItWorksItemContainer}>
             <img src='/assets/images/circle-card.svg' alt='Caneta' />
             <h5>2</h5>
             <h4>Crédito</h4>
             <p>Selecione o pacote de créditos ideal para você</p>
           </div>
-          <img src='/assets/images/arrow-right.svg' alt='Seta para direita'/>
+          <img src='/assets/images/arrow-right.svg' alt='Seta para direita' />
           <div className={styles.howItWorksItemContainer}>
             <img src='/assets/images/circle-tag.svg' alt='Caneta' />
             <h5>3</h5>
             <h4>Escolha</h4>
             <p>Escolha o serviço que deseja solicitar</p>
           </div>
-          <img src='/assets/images/arrow-right.svg' alt='Seta para direita'/>
+          <img src='/assets/images/arrow-right.svg' alt='Seta para direita' />
           <div className={styles.howItWorksItemContainer}>
             <img src='/assets/images/circle-file.svg' alt='Caneta' />
             <h5>4</h5>
             <h4>Acompanhe</h4>
             <p>Acompanhe todo o processo documental online</p>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.plansContainer}>
+        <h1>Créditos</h1>
+        <div className={styles.plansItemsContainer}>
+          <div className={styles.plansItemContainer}>
+            <div className={styles.plansContentAreaContainer}>
+              <div className={styles.plansItemTextContainer}>
+                <h2>Básico</h2>
+                <p>10 Créditos</p>
+                <h1>R$ 15,00</h1>
+              </div>
+              <button>Quero testar</button>
+            </div>
+          </div>
+
+          <div className={styles.plansItemContainer}>
+            <div className={styles.plansContentAreaContainer}>
+              <div className={styles.plansItemTextContainer}>
+                <h2>Essêncial</h2>
+                <p>30 Créditos</p>
+                <h1>R$ 64,00</h1>
+              </div>
+              <p>Economize 15%</p>
+              <button>Quero testar</button>
+            </div>
+          </div>
+
+          <div className={styles.plansItemContainer}>
+            <div className={styles.plansContentAreaContainer}>
+              <div className={styles.plansItemTextContainer}>
+                <h2>Profissional</h2>
+                <p>100 Créditos</p>
+                <h1>R$ 105,00</h1>
+              </div>
+              <p>Economize 30%</p>
+              <button>Quero testar</button>
+            </div>
           </div>
         </div>
       </div>
