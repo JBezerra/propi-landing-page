@@ -8,6 +8,7 @@ export default class MyDocument extends Document {
             <Html>
                 <Head>
                     {/* Global Site Tag (gtag.js) - Google Analytics */}
+                    <title>Propi | Burocracia de imóveis Simplificada</title>
                     <script
                         async
                         src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
