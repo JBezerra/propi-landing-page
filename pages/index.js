@@ -202,14 +202,8 @@ export default function Landing() {
       <div className={styles.footerContainer}>
         <div className={styles.footerContentAreaContainer}>
           <div className={styles.footerEmailSenderContainer}>
-            <form>
-              <img src='/assets/images/envelope.svg' alt='Envelope' />
-              <input
-                type='text'
-                placeholder='Ficou com alguma dúvida?'
-              >
-              </input>
-            </form>
+            <img src='/assets/images/envelope.svg' alt='Envelope' />
+            <h2>Ficou com alguma dúvida?</h2>
             <Link href="/contact"><button>Entrar em Contato</button></Link>
           </div>
 

@@ -400,26 +400,21 @@
 
 .footerEmailSenderContainer {
     display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.footerEmailSenderContainer h2 {
+    width: 295px;
+    background: transparent;
+    color: #FFF;
+    font: bold 22px Open Sans;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 21px;
 }
 
 .footerEmailSenderContainer form img {
     padding-right: 21px;
-}
-
-.footerEmailSenderContainer form input {
-    width: 390px;
-    height: 60px;
-    background: transparent;
-    color: #FFF;
-    border-right: none;
-    border-bottom-color: #FFF;
-    border-bottom-width: 2px;
-    outline: none;
-}
-
-.footerEmailSenderContainer form input::placeholder {
-    font: bold 22px Open Sans;
-    color: rgba(255, 255, 255, 0.80);
 }
 
 .footerEmailSenderContainer button {
