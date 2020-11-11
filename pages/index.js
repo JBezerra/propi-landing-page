@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Landing.module.css'
 
 export default function Landing() {
@@ -19,7 +20,7 @@ export default function Landing() {
             <h1>Burocracia de imóveis Simplificada</h1>
             <p>Resolva toda a burocracia documental de imóveis online, em poucos minutos e sem sair de casa.</p>
           </div>
-          <button>Começar</button>
+          <Link href="/contact"><button>Começar</button></Link>
         </div>
 
         <div className={styles.welcomeHeroContainer}>
@@ -66,7 +67,7 @@ export default function Landing() {
       <div className={styles.testDriveContainer}>
         <h1>Faça um teste Grátis!</h1>
         <div className={styles.testDriveButtonContainer}>
-          <h4>Quero Testar</h4>
+          <Link href="/contact"><h4>Quero Testar</h4></Link>
         </div>
       </div>
 
@@ -168,7 +169,7 @@ export default function Landing() {
                 <p>10 Créditos</p>
                 <h1>R$ 15,00</h1>
               </div>
-              <button>Quero testar</button>
+              <Link href="/contact"><button>Quero testar</button></Link>
             </div>
           </div>
 
@@ -180,7 +181,7 @@ export default function Landing() {
                 <h1>R$ 64,00</h1>
               </div>
               <p>Economize 15%</p>
-              <button>Quero testar</button>
+              <Link href="/contact"><button>Quero testar</button></Link>
             </div>
           </div>
 
@@ -192,7 +193,7 @@ export default function Landing() {
                 <h1>R$ 105,00</h1>
               </div>
               <p>Economize 30%</p>
-              <button>Quero testar</button>
+              <Link href="/contact"><button>Quero testar</button></Link>
             </div>
           </div>
         </div>
@@ -202,14 +203,14 @@ export default function Landing() {
         <div className={styles.footerContentAreaContainer}>
           <div className={styles.footerEmailSenderContainer}>
             <form>
-              <img src='/assets/images/envelope.svg' alt='Envelope'/>
+              <img src='/assets/images/envelope.svg' alt='Envelope' />
               <input
                 type='text'
                 placeholder='Ficou com alguma dúvida?'
               >
               </input>
             </form>
-            <button>Entrar em Contato</button>
+            <Link href="/contact"><button>Entrar em Contato</button></Link>
           </div>
 
           <div className={styles.footerInformationsContainer}>
@@ -220,12 +221,12 @@ export default function Landing() {
             <div className={styles.footerContactContainer}>
               <h2>Contato</h2>
               <div className={styles.footerContactInformationContainer}>
-                <img src='/assets/images/phone.svg' alt='Telefone'/>
+                <img src='/assets/images/phone.svg' alt='Telefone' />
                 <h4>+55 11 981790503</h4>
               </div>
 
               <div className={styles.footerContactInformationContainer}>
-                <img src='/assets/images/envelope.svg' alt='Envelope'/>
+                <img src='/assets/images/envelope.svg' alt='Envelope' />
                 <h4>contato@propi.com.br</h4>
               </div>
             </div>
