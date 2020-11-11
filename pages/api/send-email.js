@@ -1,7 +1,6 @@
-import { NextApiRequest, NextApiResponse } from 'next';
 import sendEmail from '../../util/sendEmail';
 
-export default async (request: NextApiRequest, response: NextApiResponse) => {
+export default async (request, response) => {
     if (request.method === 'POST') {
         const { name, email, phone } = request.body;
         await sendEmail({ name, email, phone });
