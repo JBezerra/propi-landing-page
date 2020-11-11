@@ -1,4 +1,4 @@
-import sendEmail from '../../util/sendEmail';
+import sendEmail from '../../utils/sendEmail';
 
 export default async (request, response) => {
     if (request.method === 'POST') {
