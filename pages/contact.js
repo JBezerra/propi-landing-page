@@ -21,7 +21,7 @@ export default function Contact() {
                     <img src='/assets/images/envelope.svg' alt='Envelope' />
                     <input type='text' placeholder='Nome' />
                     <input type='text' placeholder='Email' />
-                    <input type='number' placeholder='Telefone' />
+                    <input type='text' placeholder='Telefone' />
                 </form>
                 <button>Enviar</button>
             </div>
