@@ -1,12 +1,19 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Landing.module.css'
+import { NextSeo } from 'next-seo';
 
 export default function Landing() {
   return (
     <div id={styles.landingContainer} className='container'>
+      <NextSeo
+        title="Propi | Burocracia de imóveis Simplificada"
+        description="Resolva toda a burocracia documental de imóveis online, em poucos minutos e sem sair de casa."
+        canonical="https://www.propi.com.br/"
+      />
       <Head>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"></link>
+        <title>Propi | Burocracia de imóveis Simplificada</title>
       </Head>
 
       <div className={styles.topContainer}>
