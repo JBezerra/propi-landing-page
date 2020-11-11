@@ -1,3 +1,21 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes transformTop {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
 .topContainer img {
     width: 170px;
     padding-top: 24px;
@@ -122,4 +140,64 @@
 .footerContactInformationContainer h4 {
     font: normal 18px Open Sans;
     color: rgba(255, 255, 255, 0.67);
+}
+
+.emailSentContainer {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    animation: fadeIn 0.5s;
+}
+
+.emailSentCardContainer {
+    width: 564px;
+    height: 536px;
+    background: #FFFFFF;
+    border-radius: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: transformTop 1s;
+}
+
+.emailSentCardContainer img {
+    width: 270px;
+    height: 248px;
+}
+
+.emailSentCardContainer h1 {
+    font: 800 40px Open Sans;
+    color: rgba(0, 0, 0, 0.87);
+    margin-top: 30px
+}
+
+.emailSentCardContainer p {
+    font: normal 18px Open Sans;
+    color: rgba(0, 0, 0, 0.67);
+}
+
+.emailSentCardContainer button {
+    width: 260px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.87);
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font: bold 16px Open Sans;
+    color: #FFFFFF;
+    margin-top: 40px;
+    transition: opacity 0.3s;
+}
+
+.emailSentCardContainer button:hover {
+    opacity: 0.6;
 }

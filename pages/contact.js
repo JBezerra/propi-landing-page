@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Contact.module.css'
 
 export default function Contact() {
@@ -7,6 +8,7 @@ export default function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
+    const [emailSent, setEmailSent] = useState(false);
 
     async function sendEmailHandler() {
         const { status } = await fetch('/api/send-email',
@@ -16,9 +18,7 @@ export default function Contact() {
                 body: JSON.stringify({ name, email, phone })
             })
         if (status == 200) {
-            console.log('email enviado')
-        } else {
-
+            setEmailSent(true)
         }
     }
 
@@ -27,6 +27,17 @@ export default function Contact() {
             <Head>
                 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"></link>
             </Head>
+
+            {emailSent &&
+                <div className={styles.emailSentContainer}>
+                    <div className={styles.emailSentCardContainer}>
+                        <img src='/assets/images/smartphone-love.svg' alt='Smartphone' />
+                        <h1>E-mail enviado!</h1>
+                        <p>Enviaremos uma resposta o mais rápido possível =)</p>
+                        <Link href="/"><button>Ir para home</button></Link>
+                    </div>
+                </div>
+            }
 
             <div className={styles.topContainer}>
                 <img src='/assets/images/logo-black.svg' alt='Propi' />
