@@ -1,7 +1,27 @@
+import { useState } from 'react';
 import Head from 'next/head'
 import styles from '../styles/Contact.module.css'
 
 export default function Contact() {
+
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+
+    async function sendEmailHandler() {
+        const { status } = await fetch('/api/send-email',
+            {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, email, phone })
+            })
+        if (status == 200) {
+            console.log('email enviado')
+        } else {
+
+        }
+    }
+
     return (
         <div id={styles.contactContainer} className='container'>
             <Head>
@@ -19,11 +39,11 @@ export default function Contact() {
                 <p>Por favor, preencha as informações abaixo e entraremos em contato em instantes.</p>
                 <form>
                     <img src='/assets/images/envelope.svg' alt='Envelope' />
-                    <input type='text' placeholder='Nome' />
-                    <input type='text' placeholder='Email' />
-                    <input type='text' placeholder='Telefone' />
+                    <input type='text' placeholder='Nome' onChange={(e) => setName(e.target.value)} />
+                    <input type='text' placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
+                    <input type='text' placeholder='Telefone' onChange={(e) => setPhone(e.target.value)} />
                 </form>
-                <button>Enviar</button>
+                <button onClick={sendEmailHandler}>Enviar</button>
             </div>
 
             <div className={styles.footerContainer}>
