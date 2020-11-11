@@ -1,7 +1,8 @@
+import { NextSeo } from 'next-seo';
+
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Landing.module.css'
-import { NextSeo } from 'next-seo';
 
 export default function Landing() {
   return (
