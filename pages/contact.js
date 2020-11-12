@@ -62,7 +62,7 @@ export default function Contact() {
                     <div className={styles.footerInformationsContainer}>
                         <div className={styles.footerDescriptionContainer}>
                             <img src='/assets/images/logo-white.svg' alt='Propi' />
-                            <p>A Propi é uma plataforma que simplifica a burocracia documental de imóveis para imobiliárias. Automatizamos o trabalho repetitivo para o corretor economizar tempo, dinheiro e focar em fecha negócio.</p>
+                            <p>A Propi é uma plataforma que simplifica a burocracia documental de imóveis para imobiliárias. Automatizamos o trabalho repetitivo para o corretor economizar tempo, dinheiro e focar em fechar negócio.</p>
                         </div>
                         <div className={styles.footerContactContainer}>
                             <h2>Contato</h2>
