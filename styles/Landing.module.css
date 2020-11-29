@@ -548,9 +548,7 @@
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "feature_01 feature_02 feature_03" "feature_04 . .";
-    }
-    .featureItemContainer:nth-child(4) {
-        margin-top: 20px;
+        row-gap: 20px;
     }
     .testDriveContainer {
         width: 100%;
@@ -590,5 +588,47 @@
     }
     .footerDescriptionContainer p {
         font-size: 15px;
+    }
+}
+
+@media(max-width:768px) {
+    .welcomeContainer {
+        align-self: center;
+        justify-content: center;
+    }
+    .welcomeTextContainer {
+        height: 400px;
+    }
+    .welcomeTextContainer h1 {}
+    .welcomeTextContainer p {}
+    .welcomeHeroContainer img {
+        display: none;
+    }
+    .featureItemsContainer {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "feature_01 feature_02" "feature_03 feature_04";
+    }
+    .testDriveContainer h1 {
+        font: 800 34px Open Sans;
+    }
+    .marketValueItemsContainer {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "item_01 item_02" "item_03 item_04" "item_05 item_06";
+    }
+    .howItWorksItemsContainer {
+        transform: scale(0.6);
+    }
+    .plansItemsContainer {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "item_01 item_02" "item_03 .";
+        row-gap: 25px
+    }
+    .footerDescriptionContainer p {
+        font-size: 12px;
+        line-height: 20px;
     }
 }
