@@ -36,3 +36,10 @@ body, input, button, textarea {
     width: 90vw;
   }
 }
+
+@media(max-width:425px) {
+  .container {
+    width: 80vw;
+    min-width: 300px;
+  }
+}

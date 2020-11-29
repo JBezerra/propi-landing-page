@@ -599,8 +599,6 @@
     .welcomeTextContainer {
         height: 400px;
     }
-    .welcomeTextContainer h1 {}
-    .welcomeTextContainer p {}
     .welcomeHeroContainer img {
         display: none;
     }
@@ -608,6 +606,68 @@
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: "feature_01 feature_02" "feature_03 feature_04";
+    }
+    .testDriveContainer h1 {
+        font: 800 34px Open Sans;
+    }
+    .marketValueItemsContainer {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "item_01 item_02" "item_03 item_04" "item_05 item_06";
+    }
+    .howItWorksItemsContainer {
+        transform: scale(0.6);
+    }
+    .plansItemsContainer {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "item_01 item_02" "item_03 .";
+        row-gap: 25px
+    }
+    .footerDescriptionContainer p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+@media(max-width:425px) {
+    #landingContainer {
+        /* height: 100vh; */
+        width: 100vw;
+        /* background: red; */
+    }
+    .topContainer img {
+        width: 124px;
+        height: 40px;
+    }
+    .welcomeContainer {
+
+
+    }
+    .welcomeTextContainer {
+        background: blue;
+    }
+    .welcomeTitleContainer h1 {
+        font-size: 36px;
+        line-height: 41px;
+        height: 128px;
+    }
+    .welcomeTitleContainer p {
+        font-size: 16px;
+        line-height: 22px;
+        height: 64px;
+    }
+    .welcomeTextContainer button {
+        height: 48px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 33px;
+    }
+    .featureItemsContainer {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "feature_01" "feature_02" "feature_03" "feature_04";
     }
     .testDriveContainer h1 {
         font: 800 34px Open Sans;
