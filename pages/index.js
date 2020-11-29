@@ -106,8 +106,7 @@ export default function Landing() {
             </div>
             <p>A plataforma da Propi acelera o fechamento da transação imobiliária, sendo muito mais barato e rápido que um despachante. Chega de desconfiança, lentidão ou cancelamento de negócios.</p>
           </div>
-        </div>
-        <div className={styles.marketValueItemsContainer}>
+
           <div className={styles.marketValueItemContainer}>
             <div className={styles.marketValueItemTitleContainer}>
               <img src='/assets/images/target.svg' alt='Alvo' />

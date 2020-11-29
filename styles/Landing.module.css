@@ -113,11 +113,27 @@
 }
 
 .featureItemsContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "feature_01 feature_02 feature_03 feature_04";
     padding-top: 32px;
+}
+
+.featureItemContainer:nth-child(1) {
+    grid-area: feature_01;
+}
+
+.featureItemContainer:nth-child(2) {
+    grid-area: feature_02;
+}
+
+.featureItemContainer:nth-child(3) {
+    grid-area: feature_03;
+}
+
+.featureItemContainer:nth-child(4) {
+    grid-area: feature_04;
 }
 
 .featureItemContainer {
@@ -208,9 +224,35 @@
 
 .marketValueItemsContainer {
     padding-top: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "item_01 item_02 item_03" "item_04 item_05 item_06";
+    row-gap: 20px;
+}
+
+.marketValueItemsContainer:nth-child(1) {
+    grid-area: item_01;
+}
+
+.marketValueItemsContainer:nth-child(2) {
+    grid-area: item_02;
+}
+
+.marketValueItemsContainer:nth-child(3) {
+    grid-area: item_03;
+}
+
+.marketValueItemsContainer:nth-child(4) {
+    grid-area: item_04;
+}
+
+.marketValueItemsContainer:nth-child(5) {
+    grid-area: item_05
+}
+
+.marketValueItemsContainer:nth-child(6) {
+    grid-area: item_06
 }
 
 .marketValueItemTitleContainer {
@@ -302,10 +344,23 @@
 }
 
 .plansItemsContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "item_01 item_02 item_03";
     padding-top: 16px;
+}
+
+.plansItemsContainer:nth-child(1) {
+    grid-area: item_01;
+}
+
+.plansItemsContainer:nth-child(2) {
+    grid-area: item_02;
+}
+
+.plansItemsContainer:nth-child(3) {
+    grid-area: item_03;
 }
 
 .plansItemContainer {
@@ -453,7 +508,7 @@
 }
 
 .footerDescriptionContainer p {
-    width: 654px;
+    /* width: 654px; */
     font: normal 18px Open Sans;
     line-height: 27px;
     color: #FFFFFF;
@@ -483,4 +538,57 @@
 .footerContactInformationContainer h4 {
     font: normal 18px Open Sans;
     color: rgba(255, 255, 255, 0.67);
+}
+
+@media(max-width:1350px) {
+    .welcomeHeroContainer img {
+        width: 450px;
+    }
+    .featureItemsContainer {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "feature_01 feature_02 feature_03" "feature_04 . .";
+    }
+    .featureItemContainer:nth-child(4) {
+        margin-top: 20px;
+    }
+    .testDriveContainer {
+        width: 100%;
+    }
+    .marketValueItemsContainer {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "item_01 item_02" "item_03 item_04" "item_05 item_06";
+    }
+    .howItWorksItemsContainer {
+        transform: scale(0.8);
+    }
+    .plansItemContainer {
+        width: 300px;
+        height: 300px;
+    }
+    .plansContentAreaContainer {
+        height: 240px;
+    }
+    .plansContentAreaContainer p {
+        font-size: 17px;
+    }
+    .plansItemTextContainer h2 {
+        font-size: 33px;
+    }
+    .plansItemTextContainer p {
+        font-size: 21px;
+    }
+    .plansItemTextContainer h1 {
+        font-size: 44px;
+    }
+    .plansItemContainer button {
+        width: 222px;
+        height: 40px;
+        font: bold 15px Open Sans;
+    }
+    .footerDescriptionContainer p {
+        font-size: 15px;
+    }
 }
