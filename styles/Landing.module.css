@@ -672,6 +672,7 @@
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: "feature_01" "feature_02" "feature_03" "feature_04";
+        justify-items: center;
     }
     .featureItemContainer p {
         width: 224px;
