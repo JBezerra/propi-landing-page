@@ -632,31 +632,26 @@
 }
 
 @media(max-width:425px) {
-    #landingContainer {
-        /* height: 100vh; */
-        width: 100vw;
-        /* background: red; */
-    }
     .topContainer img {
         width: 124px;
         height: 40px;
     }
-    .welcomeContainer {
-
-
-    }
     .welcomeTextContainer {
-        background: blue;
+        height: 312px;
+        display: flex;
+        align-items: center;
     }
     .welcomeTitleContainer h1 {
+        width: 312px;
+        height: 128px;
         font-size: 36px;
         line-height: 41px;
-        height: 128px;
     }
     .welcomeTitleContainer p {
+        width: 312px;
+        height: 64px;
         font-size: 16px;
         line-height: 22px;
-        height: 64px;
     }
     .welcomeTextContainer button {
         height: 48px;
@@ -664,31 +659,146 @@
         font-size: 16px;
         line-height: 33px;
     }
+    .featureContainer h1 {
+        font: 800 26px Open Sans;
+        line-height: 28px;
+        width: 312px;
+    }
+    .featureContainer p:first-of-type {
+        line-height: 22px;
+        font: normal 16px Open Sans;
+    }
     .featureItemsContainer {
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: "feature_01" "feature_02" "feature_03" "feature_04";
+        justify-items: center;
+    }
+    .testDriveContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 312px;
+        height: 209px;
     }
     .testDriveContainer h1 {
-        font: 800 34px Open Sans;
+        font: 800 41px Open Sans;
+        line-height: 44px;
+        width: 264px;
+        padding-bottom: 24px;
+    }
+    .testDriveButtonContainer {
+        width: 264px;
     }
     .marketValueItemsContainer {
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
         grid-template-columns: 1fr;
-        grid-template-areas: "item_01 item_02" "item_03 item_04" "item_05 item_06";
+        grid-template-areas: "item_01" "item_02" "item_03" "item_04" "item_05" "item_06";
+    }
+    .marketValueContainer h1 {
+        font: 800 30px Open Sans;
+        line-height: 44px;
+        width: 312px;
+    }
+    .marketValueItemContainer h3 {
+        width: 312px;
+    }
+    .marketValueItemContainer p {
+        font-size: 16px;
+        width: 312px;
+    }
+    .howItWorksContainer {
+        height: 1128px;
+    }
+    .howItWorksContainer h1 {
+        font: 800 30px Open Sans;
+        line-height: 44px;
+        width: 312px;
+        padding-bottom: 26px;
+        margin-left: 24px;
     }
     .howItWorksItemsContainer {
-        transform: scale(0.6);
+        transform: scale(1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .howItWorksItemContainer {
+        height: 222px;
+        margin-bottom: 32px;
+    }
+    .howItWorksItemContainer p {
+        width: 224px;
+    }
+    .howItWorksArrow {
+        display: none;
+    }
+    .plansContainer {
+        margin-top: calc(1200px + 40px);
+        margin-bottom: 72px;
+    }
+    .plansContainer h1 {
+        font-size: 30px;
     }
     .plansItemsContainer {
-        grid-template-rows: 1fr;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
         grid-template-columns: 1fr;
-        grid-template-areas: "item_01 item_02" "item_03 .";
-        row-gap: 25px
+        grid-template-areas: "item_01" "item_02" "item_03";
+        row-gap: 25px;
+        justify-items: center;
+    }
+    .plansItemContainer {
+        width: 260px;
+    }
+    .footerContainer {
+        height: 650px;
+    }
+    .footerEmailSenderContainer {
+        width: 260px
+    }
+    .footerEmailSenderContainer button {
+        font-size: 12px;
+        font-weight: 500;
+        height: 40px;
+        width: 110px;
+        margin-left: 10px;
+    }
+    .footerEmailLabel h2 {
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 10px;
+        width: 100%;
+    }
+    .footerInformationsContainer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .footerDescriptionContainer {
+        width: 300px
+    }
+    .footerDescriptionContainer img {
+        width: 138px;
     }
     .footerDescriptionContainer p {
-        font-size: 12px;
+        font-size: 14px;
+        font-weight: 400;
         line-height: 20px;
+        margin-top: 20px;
+        width: 250px
+    }
+    .footerContactContainer h2 {
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .footerContactInformationContainer h4 {
+        font-size: 16px;
     }
 }
