@@ -104,7 +104,6 @@
 }
 
 .featureContainer p {
-    width: 528px;
     height: 30px;
     font: normal 20px Open Sans;
     line-height: 27px;
@@ -664,15 +663,19 @@
         line-height: 28px;
         width: 312px;
     }
-    .featureContainer p:first-of-type {
-        line-height: 22px;
+    .featureContainer p {
         font: normal 16px Open Sans;
+        line-height: 22px;
+        width: 320px;
     }
     .featureItemsContainer {
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: "feature_01" "feature_02" "feature_03" "feature_04";
-        justify-items: center;
+    }
+    .featureItemContainer p {
+        width: 224px;
+        font-size: 14px;
     }
     .testDriveContainer {
         display: flex;
@@ -791,7 +794,7 @@
         font-weight: 400;
         line-height: 20px;
         margin-top: 20px;
-        width: 250px
+        width: 320px
     }
     .footerContactContainer h2 {
         font-size: 20px;

@@ -39,7 +39,7 @@ export default function Landing() {
 
       <div className={styles.featureContainer}>
         <h1>Focamos na burocracia, o corretor em fechar negócio</h1>
-        <p>Entenda todos os nossos serviços.</p>
+        <p className={styles.featureContainerParagraph}>Entenda todos os nossos serviços.</p>
 
         <div className={styles.featureItemsContainer}>
           <div className={styles.featureItemContainer}>
