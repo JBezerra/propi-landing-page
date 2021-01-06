@@ -166,7 +166,7 @@ export default function Landing() {
         </div>
       </div>
 
-      <div className={styles.plansContainer}>
+      {/* <div className={styles.plansContainer}>
         <h1>Créditos</h1>
         <div className={styles.plansItemsContainer}>
           <div className={styles.plansItemContainer}>
@@ -204,7 +204,7 @@ export default function Landing() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className={styles.footerContainer}>
         <div className={styles.footerContentAreaContainer}>

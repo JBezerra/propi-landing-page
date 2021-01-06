@@ -435,9 +435,10 @@
 .footerContainer {
     position: absolute;
     width: 100%;
+    margin-top: calc(466px + 10px);
     height: 490px;
     left: 0px;
-    background: rgba(0, 0, 0, 0.87);
+    background: #212121;
 }
 
 .footerContentAreaContainer {
@@ -754,6 +755,9 @@
         grid-template-areas: "item_01" "item_02" "item_03";
         row-gap: 25px;
         justify-items: center;
+    }
+    .footerContainer {
+        margin-top: calc(466px + 720px);
     }
     .plansItemContainer {
         width: 260px;
